@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body {
@@ -22,7 +22,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     justify-items: center;
 }
 
@@ -41,6 +41,7 @@ header nav a {
     padding: 10px;
 
     font-weight: 700;
+    font-size: 25px;
     font-style: normal;
 }
 
@@ -51,13 +52,15 @@ header a:hover {
 
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
     
 }
 
 .caixadepesquisa {
     height: 25px;
-    width: 200px;
+    width: 215px;
 
 
     transform: scale(1.0);
@@ -66,6 +69,8 @@ header a:hover {
 
     overflow: hidden;
     border-radius: 10px;
+
+    align-items: center;
 }
 
 .caixadepesquisa form input {
@@ -83,4 +88,11 @@ header a:hover {
     background: none;
     border: none;
     cursor: pointer;
+}
+
+.material-symbols-outlined{
+    width: 100%;
+    height: 100%;
+
+
 }
