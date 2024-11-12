@@ -9,7 +9,6 @@ body {
     width: 100vw;
 
     font-family: "Roboto", sans-serif;
-    background: url(https://cdn1.epicgames.com/salesEvent/salesEvent/amoguslandscape_2560x1440-3fac17e8bb45d81ec9b2c24655758075) no-repeat;
 }
 
 /* Cabeçalho*/
@@ -105,3 +104,28 @@ form{
     align-items: center;
 }
 
+.produtos{
+    border: 2px solid black;
+    margin-top: 113px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.melhorsabor{
+margin-top: 111px;
+} 
+.catalogo {
+    border: 2px solid black;
+    width: 100%;
+    height: 1592px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    width: 360px;
+    height: 740px;
+    margin-left: 200px;
+}
