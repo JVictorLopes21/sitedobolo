@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;;
 }
 
 body {
@@ -27,6 +28,7 @@ header {
 }
 
 
+
 header nav {
     display: flex;
     align-items: center;
@@ -37,12 +39,17 @@ header nav {
 header nav a {
 
     text-decoration: none;
-    color: white;
-    padding: 10px;
+    color: black;
+    padding: 70px;
 
-    font-weight: 700;
+    font-weight: bolder;
     font-size: 25px;
     font-style: normal;
+}
+
+header nav a:hover {
+    color: white;
+    transition: .4s;
 }
 
 header a:hover {
@@ -55,12 +62,20 @@ header a:hover {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    
+
 }
 
+.navbar figure {
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .caixadepesquisa {
-    height: 25px;
-    width: 215px;
+    height: 33px;
+    width: 307px;
 
 
     transform: scale(1.0);
@@ -74,58 +89,291 @@ header a:hover {
 }
 
 .caixadepesquisa form input {
-    width: 159px;
+    width: 98%;
     height: 27px;
     border: none;
     outline: none;
+    font-weight: bold;
+    text-align: left;
+    padding: 15px;
 
-    text-align: center;
 }
 
 .caixadepesquisa form button {
-    width: 38px;
-    height: 26px;
+    width: 80px;
+    height: 36px;
     background: none;
     border: none;
     cursor: pointer;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixadepesquisa form button::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background-color: black;
+    margin-right: 10px;
+    transform: rotate(20deg);
+    margin-right: 15px;
+
+
 }
 
 
+.lupa {
 
-.lupa{
-
-    margin-top: 2px;
+    width: 100%;
+    height: 100%;
 }
 
-form{
+form {
     width: 100%;
     display: flex;
     align-items: center;
 }
 
-.produtos{
-    border: 2px solid black;
-    margin-top: 113px;
-    justify-content: center;
+.section-class {
+    position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
+    margin-top: 140px;
     flex-direction: column;
 
 }
-.melhorsabor{
-margin-top: 111px;
-} 
+
+.section-title {
+    font-size: px;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.carrosel {
+    height: 680px;
+
+}
+
+
+
 .catalogo {
-    border: 2px solid black;
+
     width: 100%;
     height: 1592px;
     display: flex;
     flex-direction: row;
+    margin-top: 177px;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px 280px;
 }
-.card{
-    width: 360px;
-    height: 740px;
-    margin-left: 200px;
+
+
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 705px;
+
+    border-radius: 20px;
+    border: none;
+
+}
+
+.card-body {
+    position: absolute;
+    bottom: 35px;
+    height: 401px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(to bottom, #91D0CE, #CAFFFD);
+    border-radius: 20px;
+    border: none;
+}
+
+.card-img-top {
+    height: 387px;
+}
+
+.card-title {
+    height: 75px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-text {
+    height: 121px;
+    font-size: 17px;
+    font-weight: initial;
+}
+
+.valor {
+    height: 104px;
+    width: 250px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+.card-text,
+.card-title,
+.valor {
+    text-align: center;
+
+}
+
+.card-body .btn {
+    height: 66px;
+    width: 220px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-body .btn:hover {
+
+    color: black;
+    background: #950000;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+
+.comentarios {
+    margin-top: 135px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.contato {
+    margin-top: 163px;
+    height: 645px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    ;
+
+}
+
+
+.minicarousel {
+    height: 623px;
+    width: 921px;
+}
+
+
+.grupoVip {
+
+    height: 628px;
+    width: 534px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px
+}
+
+.contato-title {
+    margin-top: 25px;
+    height: 80px;
+    width: 472px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 5px solid #713636;
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+
+
+    height: 337px;
+    width: 100%;
+
+}
+
+.buttons .btn {
+    height: 57px;
+    width: 520px;
+    background-color: #91D0CE;
+    color: white;
+    border-radius: 15px;
+    font-size: 35px;
+    font-weight: bold;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons .btn:hover {
+    background-color: #0B7A77;
+    color: black;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+.rodape {
+    position: relative;
+    margin-top: 245px;
+    background-color: #91D0CE;
+
+    height: 528px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.informacoes {
+    height: 190px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.informacoes * {
+    width: 522px;
+    text-align: center;
+
+
+}
+
+
+
+.informacoes *,
+.moreinfo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.moreinfo {
+    margin-top: 70px;
+    height: 190px;
+    display: flex;
+    justify-content: center;
 }

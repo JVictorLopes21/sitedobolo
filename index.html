@@ -2,147 +2,242 @@
 <html lang="Pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 
-    <title>A casa dos bolos</title>
+  <title>A casa dos bolos</title>
 </head>
 
 <body>
 
-    <header>
-        <section class="navbar">
-            <figure>
-                <img class="logo" src="imagens/logo.png" alt="">
-            </figure>
+  <header>
+    <section class="navbar">
+      <figure>
+        <img class="logo" src="imagens/logo.png" alt="">
+      </figure>
 
-            <nav>
-                <a href="#">Nossa missão</a>
-                <a href="#">Nossos sabores</a>
-                <a href="#">Contatos</a>
-            </nav>
+      <nav>
+        <a href="#missao">Nossa missão</a>
+        <a href="#sabores">Nossos sabores</a>
+        <a href="#contatos">Contatos</a>
+      </nav>
 
 
-            <div class="caixadepesquisa">
-                <form role="search">
-                    <input type="search" placeholder="Pesquisa" aria-label="">
-                    <button type="submit"><span class="material-symbols-outlined">
-                            search
-                        </span></button>
-                </form>
-            </div>
-        </section>
+      <div class="caixadepesquisa">
+        <form role="search">
+          <input type="search" placeholder="Busque seu sabor preferido">
+          <button type="submit">
+            <img src="./imagens/Lupa.png" alt="">
+          </button>
+        </form>
+      </div>
+    </section>
 
-    </header>
+  </header>
 
 </body>
 
 
 <body>
-    <section class="carrosel">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="imagens/banner 1.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="imagens/banner 2.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="imagens/banner 4.png" class="d-block w-100" alt="...">
-                </div>
-            </div>
+  <section class="carrosel" id="missao">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="imagens/banner-carousel/banner 1.png" class="d-block w-100" alt="...">
         </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="imagens/banner-carousel/banner 2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="imagens/banner-carousel/banner 3.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
 
-    </section>
-    <section class="produtos">
-        <img class="barra" src="imagens/barra.png" alt="">
+  </section>
+  <section class="section-class">
+    <h1 class="section-title" id="sabores">Nossos MELHORES Sabores !</h1>
+    <img class="barra" src="imagens/barra.png" alt="">
 
-        <h1 class="melhorsabor">Nossos MELHORES Sabores !</h1>
-<div class="catalogo">
-    <div class="card" style="width: 18rem;">
-        <img src="imagens/bolo1.png" class="card-img-top" alt="...">
+    <div class="catalogo">
+      <div class="card" style="width: 18rem;">
+        <img src="imagens/bolos/bolo 1.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Bolo de Chocolate com Brigadeiro
-        </h5>
+          </h5>
           <p class="card-text"> O clássico bolo de chocolate, com uma generosa camada de brigadeiro cremoso.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <span class="valor">De: R$149,90<br>Por: R$69,90</span>
+          <a href="#" class="btn btn-danger">COMPRAR</a>
         </div>
       </div>
+
+
+
+
       <div class="card" style="width: 18rem;">
-        <img src="imagens/bolo 2.png" class="card-img-top" alt="...">
+        <img src="imagens/bolos/bolo 2.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Bolo de Cenoura com Cobertura de Chocolate
-        </h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          </h5>
+          <p class="card-text">Massa fofinha de cenoura, coberta com uma irresistível calda de chocolate.</p>
+          <span class="valor">De: R$89,00<br>Por: R$40,00</span>
+          <a href="#" class="btn btn-danger">COMPRAR</a>
         </div>
       </div>
+
+
+
+
+
       <div class="card" style="width: 18rem;">
-        <img src="imagens/bolo 3.png" class="card-img-top" alt="...">
+        <img src="imagens/bolos/bolo 3.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Bolo de Limão Siciliano</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <p class="card-text">Uma combinação refrescante de massa leve de limão, perfeito para os dias de verão.</p>
+          <span class="valor">De: R$100,00<br>Por: R$70,00</span>
+          <a href="#" class="btn btn-danger">COMPRAR</a>
         </div>
       </div>
+
+
+
+
+
+
       <div class="card" style="width: 18rem;">
-        <img src="imagens/bolo 4.png" class="card-img-top" alt="...">
+        <img src="imagens/bolos/bolo 4.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Bolo Red Velvet</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <p class="card-text">Bolo Red Velvet
+            Um bolo elegante e sofisticado, com massa vermelha e cobertura cremosa de cream cheese.</p>
+          <span class="valor">De: R$170,90<br>Por: R$100,00</span>
+          <a href="#" class="btn btn-danger">COMPRAR</a>
         </div>
       </div>
+
+
+
       <div class="card" style="width: 18rem;">
-        <img src="imagens/bolo 5.png" class="card-img-top" alt="...">
+        <img src="imagens/bolos/bolo 5.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Bolo de Coco Cremoso
-        </h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          </h5>
+          <p class="card-text">Sabor tropical em cada mordida, com uma camada cremosa de coco.</p>
+          <span class="valor">De: R$110,00<br>Por: R$75,00</span>
+          <a href="#" class="btn btn-danger">COMPRAR</a>
         </div>
       </div>
+
+
+
       <div class="card" style="width: 18rem;">
-        <img src="imagens/bolo 6.png" class="card-img-top" alt="...">
+        <img src="imagens/bolos/bolo 6.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Bolo de Morango com Chantill</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <p class="card-text">Massa leve e aerada, recheada com morangos frescos e chantilly macio.</p>
+          <span class="valor">De: R$150,00<br>Por: R$100,00</span>
+          <a href="#" class="btn btn-danger">COMPRAR</a>
         </div>
       </div>
+    </div>
+
+  </section>
 
 
-
-
-
-</div>
-
+  <section class="section-class">
+    <h1 class="section-title">Oque nossos clientes dizem?</h1>
+    <img class="barra" src="imagens/barra.png" alt="">
+    <section class="comentarios">
+      <figure class="comentario"><img src="imagens/comentarios/comentario1.png" alt=""></figure>
+      <figure class="comentario"><img src="imagens/comentarios/comentario2.png" alt=""></figure>
+      <figure class="comentario"><img src="imagens/comentarios/comentario3.png" alt=""></figure>
     </section>
 
+  </section>
 
 
+  <section class="section-class">
+    <h1 class="section-title" id="contatos">Fique por dentro das novidades!</h1>
+    <img class="barra" src="imagens/barra.png" alt="">
 
 
+    <section class="contato">
+
+      <section class="minicarousel">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000">
+              <img class=" d-block w-100" src="imagens/mini-carousel/minibanner1.png" alt="First slide">
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+              <img class=" d-block w-100" src="imagens/mini-carousel/minibanner2.png" alt="Second slide">
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+              <img class=" d-block w-100" src="imagens/mini-carousel/minibanner3.png" alt="Third slide">
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section class="grupoVip">
+        <h1 class="contato-title">INSIRA SEU EMAIL PARA SE<br>TORNAR UM(A) BOLEIRO VIP!
+          <span class="line"></span>
+        </h1>
+
+        <section class="buttons">
+          <a href="#" class="btn">Seu Email</a>
+          <a href="#" class="btn">ENVIAR</a>
+        </section>
+      </section>
+    </section>
+
+  </section>
 
 
+  <footer class="rodape">
+    <section class="informacoes">
+      <section class="info1 info">
+        <p class="info-text"><b>Entrega</b> Produtos de pronta entrega: delivery em até 24 h para cidade<br>de Pouso
+          Alegre e Santa Rita Do Sapucai.<br>Para outras cidades consulte no momento da compra.</p>
+      </section>
+
+      <section class="info2 info">
+        <p class="info-text"><b>Contatos</b> Estamos sempre à disposição para atendê-lo! Entre em contato<br>conosco
+          para encomendas personalizadas, dúvidas ou<br>sugestões.<br>
+          Telefone: (35) 992291200<br>
+          E-mail: contato@casadosboloscaseiros.com</p>
+      </section>
+
+      <section class="info3 info">
+        <p class="info-text"><b>Siga-nos nas Redes Sociais</b> Facebook;Acasadosbolos<br>
+          Instagram; Acasadosbolos21<br>
+          Twitter;Casadosbolos<br>
+          Não perca tempo, experimente agora mesmo nossos deliciosos<br>bolos caseiros e transforme seus momentos em
+          verdadeiras<br>celebrações! Casa dos Bolos Caseiros Onde cada fatia é uma<br>história de amor</p>
+      </section>
+
+    </section>
+    <section class="moreinfo">
+      <p>Ingredientes frescos e selecionados, garantindo qualidade e sabor incomparáveis. Preparo artesanal com carinho
+        e dedicação, mantendo a tradição dos melhores bolos caseiros. Variedade de sabores para todos os gostos e
+        ocasiões, desde os <br> clássicos até opções mais exóticas. Entrega rápida e eficiente em toda a região, para
+        que você possa desfrutar dos nossos bolos fresquinhos onde estiver. Para mais detalhes da tabela nutrcional
+        entrar em contato por um dos meios acima. Todos os <br> direitos são reservados A Casa Dos Bolos LTDA inscrita
+        no CNPJ  08114346647</p>
+    </section>
+
+  </footer>
 
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 
