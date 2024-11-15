@@ -1,0 +1,156 @@
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    header nav {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header nav a {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .caixadepesquisa {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .section-class {
+        margin-top: 80px;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 20px;
+        width: 90%;
+    }
+
+
+
+    .comentarios {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+
+    .contato {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .minicarousel {
+        width: 100%;
+    }
+
+    .grupoVip {
+        width: 100%;
+        align-items: center;
+    }
+
+    .buttons .btn {
+        width: 100%;
+    }
+
+    .informacoes {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    footer {
+        height: 100%;
+    }
+}
+
+
+@media (min-width: 350px) and (max-width: 1030px) {
+
+    .navbar {
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+    }
+
+
+    header nav a {
+        font-size: 15px;
+        padding: 40px;
+    }
+
+    .logo {
+        transform: scale(0.8);
+    }
+
+    .comentarios {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .comentario {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+
+    .contato {
+        justify-content: first flex-start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+
+
+
+    }
+
+    .minicarousel {
+        width: 80%;
+        order: 2;
+    }
+
+    .grupoVip {
+        width: 70%;
+    }
+
+    .contato-title {
+        width: 80%;
+        font-size: 20px;
+    }
+
+
+    .minicarousel {
+        height: 100%;
+    }
+
+    .rodape {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        margin-top: 150px;
+    }
+
+    .informacoes {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .informacoes>* {
+        width: 90%;
+        margin-bottom: 20px;
+
+
+
+
+    }
+}
